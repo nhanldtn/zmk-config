@@ -32,14 +32,14 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T            &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G            &kp H        &kp J  &kp K      &kp L    &kp SEMI  &lt 3 SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B            &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LGUI  &mo 2  &tp LCTRL RET    &lt 4 SPACE  &mo 1  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T            &kp Y                 &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G            &kp H                 &kp J  &kp K      &kp L    &kp SEMI  &lt 3 SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B            &kp N                 &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LGUI  &mo 2  &tp LCTRL RET    &tp LEFT_SHIFT SPACE  &mo 1  &kp RALT
             >;
         };
 
-        nums_move {
+        layer_1 {
             // -----------------------------------------------------------------------------------------
             // |      |  !  |  @  |  #  |  $  |    %     |   |  ^  |  &  |  *  |  (  |  )  |   \   |
             // |      |  1  |  2  |  3  |  4  |    5     |   |  -  |  =  |  `  |  [  |  ]  |  "|"  |
@@ -54,7 +54,7 @@
             >;
         };
 
-        symbols {
+        layer_2 {
             // -----------------------------------------------------------------------------------------
             // |       |  F1  |  F2  |  F3  |  F4  |  F5 |            |  F6  |  F7  |  F8  |  F9  |  F10  |   |
             // |       | Prev | Next | Vol - | Vol + | Play/Pause |   |      | LFT | DWN |  UP | RGT |     |     |
@@ -62,28 +62,19 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&trans          &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&studio_unlock  &kp C_PREV       &kp C_NEXT   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP       &kp UNDERSCORE  &kp PLUS       &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp NON_US_BACKSLASH
-&trans          &trans           &trans       &trans        &trans        &trans         &kp MINUS       &kp EQUAL      &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-                                              &trans        &trans        &trans         &trans          &trans         &trans
+&trans          &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&studio_unlock  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp UNDERSCORE  &kp PLUS       &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
+&trans          &kp NUMBER_6     &kp N7        &kp N8        &kp N9        &kp N0         &kp MINUS       &kp EQUAL      &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+                                               &trans        &trans        &trans         &trans          &trans         &trans
             >;
         };
 
-        funtion_key {
+        layer_3 {
             bindings = <
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &kp F11  &kp F12  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
-                                        &trans        &trans        &trans          &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans     &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans          &trans
+&trans      &kp F1           &kp F2        &kp F3        &kp F4          &kp F5          &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans      &kp C_VOLUME_UP  &kp C_VOL_DN  &kp K_MUTE    &kp LC(C_PLAY)  &trans          &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &trans  &trans  &trans  &trans   &trans   &trans
+                                           &trans        &trans          &trans          &trans  &trans  &trans
             >;
         };
     };
