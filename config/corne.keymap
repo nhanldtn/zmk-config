@@ -32,10 +32,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                 &kp Y            &kp U  &kp I         &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                 &kp H            &kp J  &kp K         &kp L    &kp SEMI  &lt 3 SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B                 &kp N            &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LGUI  &mo 2  &tp LEFT_SHIFT RET    &tp RCTRL SPACE  &mo 1  &kp LEFT_ALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T               &kp Y            &kp U  &kp I          &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G               &kp H            &kp J  &kp K          &kp L    &kp SEMI  &lt 3 SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B               &kp N            &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LGUI  &mo 2  &tp LEFT_ALT RET    &tp RCTRL SPACE  &mo 1  &kp BACKSPACE
             >;
         };
 
@@ -47,10 +47,10 @@
             //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
-&kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp N5    &kp NUMBER_6    &kp N7       &kp N8         &kp N9     &kp N0  &kp DEL
-&trans     &trans        &trans        &trans        &trans          &trans    &kp LEFT_ARROW  &kp DOWN     &kp UP_ARROW   &kp RIGHT  &trans  &kp INSERT
-&kp LSHFT  &kp CLCK      &kp K_COPY    &kp K_PASTE   &kp LS(LG(F4))  &trans    &kp HOME        &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &trans  &kp RSHFT
-                                       &trans        &trans          &trans    &trans          &trans       &trans
+&kp ESC    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4    &kp N5    &kp NUMBER_6    &kp N7    &kp N8        &kp N9     &kp N0  &kp DEL
+&trans     &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP   &kp END         &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &kp INSERT
+&kp LSHFT  &kp CLCK      &kp K_COPY     &kp K_PASTE   &kp LS(LG(F4))  &trans    &trans          &trans    &trans        &trans     &trans  &kp RSHFT
+                                        &trans        &trans          &trans    &trans          &trans    &trans
             >;
         };
 
